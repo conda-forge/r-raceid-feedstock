@@ -47,6 +47,7 @@ requirements:
     - r-igraph
     - r-irlba
     - r-locfit
+    - r-nlcoptim
     - r-pheatmap
     - r-propr
     - r-quadprog
@@ -71,6 +72,7 @@ requirements:
     - r-igraph
     - r-irlba
     - r-locfit
+    - r-nlcoptim
     - r-pheatmap
     - r-propr
     - r-quadprog
