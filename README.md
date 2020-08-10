@@ -3,7 +3,7 @@ About r-raceid
 
 Home: https://CRAN.R-project.org/package=RaceID
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: BSD-3-Clause
 
