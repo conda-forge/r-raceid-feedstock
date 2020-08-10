@@ -14,7 +14,6 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  skip: true  # [r_base == '3.5.1']
   number: 0
   rpaths:
     - lib/R/lib/
@@ -37,6 +36,7 @@ requirements:
     - r-fateid
     - r-mass
     - r-matrix
+    - r-nlcoptim
     - r-rcolorbrewer
     - r-rcpp
     - r-rtsne
@@ -48,7 +48,6 @@ requirements:
     - r-igraph
     - r-irlba
     - r-locfit
-    - r-nlcoptim
     - r-pheatmap
     - r-propr
     - r-quadprog
@@ -62,6 +61,7 @@ requirements:
     - r-fateid
     - r-mass
     - r-matrix
+    - r-nlcoptim
     - r-rcolorbrewer
     - r-rcpp
     - r-rtsne
@@ -73,7 +73,6 @@ requirements:
     - r-igraph
     - r-irlba
     - r-locfit
-    - r-nlcoptim
     - r-pheatmap
     - r-propr
     - r-quadprog
@@ -88,7 +87,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=RaceID
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Application of 'RaceID' allows inference of cell types and prediction of lineage trees by he StemID2 algorithm. Herman, J.S., Sagar, Grün D. (2018) <DOI:10.1038/nmeth.4662>.
   license_family: GPL3
   license_file:
