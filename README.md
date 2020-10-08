@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=RaceID
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-raceid-feedstock/blob/master/LICENSE.txt)
 
 Summary: Application of 'RaceID' allows inference of cell types and prediction of lineage trees by he StemID2 algorithm. Herman, J.S., Sagar, Grün D. (2018) <DOI:10.1038/nmeth.4662>.
-
-
 
 Current build status
 ====================
