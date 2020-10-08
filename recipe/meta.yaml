@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RaceID_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RaceID/RaceID_{{ version }}.tar.gz
-  sha256: 9f66ce479dad15e6f5944e414e38f825d76034d7274c3bc729a49f9ab76002f6
+  sha256: fc3446b90866d380f6d068d7693d9e0c8597623e8eff446af78637064dc70218
 
 build:
   merge_build_host: true  # [win]
