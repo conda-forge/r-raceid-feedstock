@@ -30,13 +30,13 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-fnn
     - r-fateid
     - r-mass
     - r-matrix
-    - r-nlcoptim
     - r-rcolorbrewer
     - r-rcpp
     - r-rtsne
@@ -44,14 +44,18 @@ requirements:
     - r-coop
     - r-fpc
     - r-ggplot2
+    - r-harmony
     - r-ica
     - r-igraph
     - r-irlba
+    - r-leiden
     - r-locfit
+    - r-matrixstats
     - r-pheatmap
-    - r-propr
+    - r-princurve
     - r-quadprog
     - r-randomforest
+    - r-runner
     - r-umap
     - r-vegan
   run:
@@ -61,7 +65,6 @@ requirements:
     - r-fateid
     - r-mass
     - r-matrix
-    - r-nlcoptim
     - r-rcolorbrewer
     - r-rcpp
     - r-rtsne
@@ -69,14 +72,18 @@ requirements:
     - r-coop
     - r-fpc
     - r-ggplot2
+    - r-harmony
     - r-ica
     - r-igraph
     - r-irlba
+    - r-leiden
     - r-locfit
+    - r-matrixstats
     - r-pheatmap
-    - r-propr
+    - r-princurve
     - r-quadprog
     - r-randomforest
+    - r-runner
     - r-umap
     - r-vegan
 
