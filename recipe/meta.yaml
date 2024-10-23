@@ -1,6 +1,5 @@
 {% set version = "0.2.4" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-raceid
@@ -13,8 +12,7 @@ source:
   sha256: c6eb9fd0a801010537b0cb4e2a4aa2eb3aca245ebe799d13719cf9e2ec81eb55
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   rpaths:
     - lib/R/lib/
     - lib/
@@ -22,7 +20,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
@@ -56,7 +56,6 @@ requirements:
     - r-vegan
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-fnn
     - r-fateid
     - r-mass
