@@ -19,12 +19,12 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}              # [not win]
-    - {{ stdlib("c") }}                # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ stdlib("m2w64_c") }}          # [win]
-    - {{ compiler('cxx') }}            # [not win]
-    - {{ compiler('m2w64_cxx') }}      # [win]
+    - {{ compiler('c') }}          # [not win]
+    - {{ stdlib("c") }}            # [not win]
+    - {{ compiler('m2w64_c') }}    # [win]
+    - {{ stdlib("m2w64_c") }}      # [win]
+    - {{ compiler('cxx') }}        # [not win]
+    - {{ compiler('m2w64_cxx') }}  # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
@@ -32,50 +32,56 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-fnn
-    - r-fateid
-    - r-mass
-    - r-matrix
-    - r-nlcoptim
-    - r-rcolorbrewer
-    - r-rcpp
-    - r-rtsne
     - r-cluster
     - r-coop
+    - r-fateid
+    - r-fnn
     - r-fpc
     - r-ggplot2
+    - r-harmony
     - r-ica
     - r-igraph
     - r-irlba
+    - r-leiden
     - r-locfit
+    - r-mass
+    - r-matrix
+    - r-matrixstats
     - r-pheatmap
-    - r-propr
+    - r-princurve
     - r-quadprog
     - r-randomforest
+    - r-rcolorbrewer
+    - r-rcpp
+    - r-rtsne
+    - r-runner
     - r-umap
     - r-vegan
   run:
     - r-base
-    - r-fnn
-    - r-fateid
-    - r-mass
-    - r-matrix
-    - r-nlcoptim
-    - r-rcolorbrewer
-    - r-rcpp
-    - r-rtsne
     - r-cluster
     - r-coop
+    - r-fateid
+    - r-fnn
     - r-fpc
     - r-ggplot2
+    - r-harmony
     - r-ica
     - r-igraph
     - r-irlba
+    - r-leiden
     - r-locfit
+    - r-mass
+    - r-matrix
+    - r-matrixstats
     - r-pheatmap
-    - r-propr
+    - r-princurve
     - r-quadprog
     - r-randomforest
+    - r-rcolorbrewer
+    - r-rcpp
+    - r-rtsne
+    - r-runner
     - r-umap
     - r-vegan
 
@@ -95,24 +101,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-
-# Package: RaceID
-# Title: Identification of Cell Types and Inference of Lineage Trees from Single-Cell RNA-Seq Data
-# Version: 0.1.7
-# Date: 2020-01-12
-# Author: Dominic Grun <dominic.gruen@gmail.com>
-# Maintainer: Dominic Grun <dominic.gruen@gmail.com>
-# Description: Application of 'RaceID' allows inference of cell types and prediction of lineage trees by he StemID2 algorithm. Herman, J.S., Sagar, Grun D. (2018) <DOI:10.1038/nmeth.4662>.
-# Depends: R (>= 3.3)
-# Imports: coop, compiler, cluster, FateID, FNN, fpc, ggplot2, grDevices, ica, igraph, irlba, locfit, methods, MASS, Matrix, parallel, pheatmap, propr, quadprog, randomForest, Rcpp, RColorBrewer, Rtsne, umap, vegan
-# LinkingTo: Rcpp (>= 0.11.0)
-# Suggests: DESeq2, destiny, knitr, rmarkdown, scran
-# VignetteBuilder: knitr
-# License: GPL-3
-# Encoding: UTF-8
-# LazyData: true
-# RoxygenNote: 6.0.1
-# NeedsCompilation: yes
-# Packaged: 2020-01-12 19:17:54 UTC; d.grun
-# Repository: CRAN
-# Date/Publication: 2020-01-13 19:40:05 UTC
