@@ -1,4 +1,4 @@
-{% set version = "0.3.7" %}
+{% set version = "0.3.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RaceID_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RaceID/RaceID_{{ version }}.tar.gz
-  sha256: 520d40492c28000d397bf291f88727c47c67e1e0d5a3d5dd05d3c9e198d50ae7
+  sha256: 15420f716b79f7488ee1a627a6f3ef778dbbdac1a206177ef064eb20de39a33e
 
 build:
   number: 0
